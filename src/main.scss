@@ -26,10 +26,12 @@ header{
   .nav {
     padding-right: 1rem;
     display: flex;
+    align-items: center;
     ul {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
+      align-items: center;
       gap: 1rem;
   
       li {
@@ -40,13 +42,24 @@ header{
       }
     }
   }
-
-
   
-
+  .notification{
+    display: flex;
+    align-items: center;
+    .cartBubble{
+      border-radius: 50%;
+      background-color: red;
+      
+    }
+  }
+  
+  
+  .ItemListContainer{
+    background-color: aliceblue
+  }
 
 main {
-    background-color: aliceblue;    
+        
     flex-grow: 1;
 
   }

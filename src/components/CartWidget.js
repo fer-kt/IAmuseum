@@ -1,10 +1,16 @@
 import React from 'react'
 
 const CartWidget = () => {
+  let products = 0
   return (
-    <span className="material-symbols-outlined">
-shopping_cart
-</span>
+
+    <div className='notification'>
+      <span className="material-symbols-outlined ">
+      shopping_cart
+      </span>
+      <p className='cartBubble'> {products}</p>
+    
+    </div>
   )
 }
 
