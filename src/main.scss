@@ -1,0 +1,52 @@
+
+html, body, #root{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+header{
+  background-color: rgb(19, 134, 22);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  
+  
+}
+
+  
+  .nav {
+    padding-right: 1rem;
+    display: flex;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 1rem;
+  
+      li {
+        list-style: none;
+        a{
+            text-decoration: none;
+        }
+      }
+    }
+  }
+
+
+  
+
+
+main {
+    background-color: aliceblue;    
+    flex-grow: 1;
+
+  }
