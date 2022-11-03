@@ -2,18 +2,20 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import Main from "./Main";
-import ItemListContainer from './ItemListContainer'
+import ItemListContainer from "./itemList/ItemListContainer";
+import { BrowserRouter } from "react-router-dom";
+
+
 
 
 
 const App = () => {
     return (
-        <>
-            <Header />
-            <ItemListContainer greeting = 'Bienvenido usuario.'/>
+        <BrowserRouter>
+            <Header />                
             < Main   />
             < Footer />
-        </>
+        </BrowserRouter>
     )
 }
 

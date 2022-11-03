@@ -1,0 +1,51 @@
+$ter-color: #cccdd3;
+$text_color: #2c3333;
+%transition{
+    transition: all 0.3s ease;
+    
+  }
+
+.cards__container {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem ;
+  padding: 3rem 0;
+}
+
+.card__image {
+ border-style: solid;border-width: 30px 40px 30px 40px;-moz-border-image: url(frame.png) 35 90 35 90 stretch stretch;-webkit-border-image: url(frame.png) 35 90 35 90 stretch stretch;-o-border-image: url(frame.png) 35 90 35 90 stretch stretch;border-image: url(frame.png) 35 90 35 90 stretch stretch;
+//   height: 100%;
+  box-sizing: border-box;
+
+ height: 300px;
+ 
+  margin: 1rem 0;
+}
+
+.detail {
+  height: auto;
+  width: 50%;
+}
+
+.itemList__card {
+    @extend %transition;
+  background-color: rgba($color: $ter-color, $alpha: 0.8);
+  //transition: all 0.3s ease;
+  color: $text_color;
+   border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+ 
+}
+
+.itemDetail__img:hover {
+    transform: scale(2);
+    @extend %transition;
+
+}
+
+.itemList__card:hover {
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
