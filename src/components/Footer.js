@@ -3,6 +3,7 @@ import { FaInstagram, FaGithub } from "react-icons/fa";
 import {BiMailSend} from "react-icons/bi"
 
 const Footer =()=>{
+    
     return (
         <footer>
             <p>

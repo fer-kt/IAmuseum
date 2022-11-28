@@ -6,6 +6,7 @@ import ItemDetailContainer from "./itemDetails/ItemDetailContainer";
 import Finalizar from "./carrito/Finalizar";
 import Pedido from "./carrito/Pedido";
 const Main = () => {
+      
   return (
     <main>
       <Routes>

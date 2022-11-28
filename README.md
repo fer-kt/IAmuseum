@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# IA Museum
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+E-commerce inspirado en un museo de arte, con cuadros generados con inteligencia artificial. Realizado con React. Utiliza Firebase para obtener la información de los productos dinamicamente y guardar las órdenes de compra. 
 
-## Available Scripts
 
-In the project directory, you can run:
+## Instalación
+```bash
+git clone https://github.com/fer-kt/IAmuseum.git    (Clonar repositorio)
+cd IAmuseum     (Ingresar al directorio clonado)
+npm install     (Instalar dependencias)
+npm start       (Correr servidor de desarrollo)
 
-### `npm start`
+### Reemplazar firebase.js con los datos que otorga Firebase para utilizar base de datos propia 
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Técnologías usadas
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='html5' src='https://img.shields.io/badge/HTML-100000?style=plastic&logo=html5&logoColor=FFFFFF&labelColor=black&color=black'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='CSS3' src='https://img.shields.io/badge/CSS-100000?style=plastic&logo=CSS3&logoColor=FFFFFF&labelColor=black&color=black'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='javaScript' src='https://img.shields.io/badge/javaScript-100000?style=plastic&logo=javaScript&logoColor=FFFFFF&labelColor=black&color=black'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='react' src='https://img.shields.io/badge/React_18.2.0-100000?style=plastic&logo=react&logoColor=FFFFFF&labelColor=black&color=black'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='sass' src='https://img.shields.io/badge/sass_ 1.55.0-100000?style=plastic&logo=sass&logoColor=FFFFFF&labelColor=black&color=black'/></a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* react: 18.2.0 - Se utilizó React para el frontend
+* react-router-dom: 6.4.2 - Para el manejo de las rutas
+* react-icons: 4.6.0 - Iconos varios
+* react-toastify: 9.1.1 - Para las notificaciones y feedback con las interacciones del usuario
+* firebase: 9.14.0 - Cómo base de datos. Obtiene la información sobre los productos y guarda las ventas realizadas
+* sass: 1.55.0 - Pre procesador de CSS
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Versión desplegada acá https://iamuseum.vercel.app/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Capturas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="https://postimg.cc/bZkcGWxS" target="_blank"><img src="https://i.postimg.cc/bZkcGWxS/Captura-web-27-11-2022-224111-iamuseum-vercel-app.jpg" alt="Captura-web-27-11-2022-224111-iamuseum-vercel-app"/></a><br/><br/>
+<a href="https://postimg.cc/9rvHQC7j" target="_blank"><img src="https://i.postimg.cc/9rvHQC7j/Captura-web-27-11-2022-224122-iamuseum-vercel-app.jpg" alt="Captura-web-27-11-2022-224122-iamuseum-vercel-app"/></a><br/><br/>
+<a href="https://postimg.cc/dL7KFLDB" target="_blank"><img src="https://i.postimg.cc/dL7KFLDB/Captura-web-27-11-2022-224151-iamuseum-vercel-app.jpg" alt="Captura-web-27-11-2022-224151-iamuseum-vercel-app"/></a><br/><br/>
+<a href="https://postimg.cc/nMStNvVr" target="_blank"><img src="https://i.postimg.cc/nMStNvVr/Captura-web-27-11-2022-224227-iamuseum-vercel-app.jpg" alt="Captura-web-27-11-2022-224227-iamuseum-vercel-app"/></a><br/><br/>
+<a href='https://postimg.cc/PC2bMrzg' target='_blank'><img src='https://i.postimg.cc/PC2bMrzg/Captura-web-27-11-2022-224619-iamuseum-vercel-app.jpg' border='0' alt='Captura-web-27-11-2022-224619-iamuseum-vercel-app'/></a>

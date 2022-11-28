@@ -1,19 +1,18 @@
-
 import { initializeApp } from "firebase/app";
 
-import { getFirestore} from "firebase/firestore"
+import { getFirestore } from "firebase/firestore";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyDir49gvJ2okJpA5FNzTU7leIcK8xV0d2U",
-  authDomain: "museum-397f4.firebaseapp.com",
-  projectId: "museum-397f4",
-  storageBucket: "museum-397f4.appspot.com",
-  messagingSenderId: "291703737397",
-  appId: "1:291703737397:web:6b5430c924e34ef0a2757c",
-  measurementId: "G-KV5PCWFHBM"
-};
 
+const { REACT_APP_apiKey} = process.env
+const firebaseConfig ={
+  apiKey: REACT_APP_apiKey,
+authDomain: process.env.REACT_APP_authDomain,
+projectId: process.env.REACT_APP_projectId,
+storageBucket: process.env.REACT_APP_storageBucket,
+messagingSenderId: process.env.REACT_APP_messagingSenderId,
+appId: process.env.REACT_APP_appId,
+measurementId: process.env.REACT_APP_measurementId}
 
 const app = initializeApp(firebaseConfig);
 
-export const db = getFirestore(app)
+export const db = getFirestore(app);
