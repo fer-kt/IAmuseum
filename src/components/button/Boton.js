@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 const Boton = ({ id }) => {
   return (
-    <><Link to={"/item/" + id}> 
-      <button>        
-        Ver más 
-      </button></Link>
+    <>
+      <Link to={"/item/" + id}>
+        <button className="btn">Ver más</button>
+      </Link>
     </>
   );
 };

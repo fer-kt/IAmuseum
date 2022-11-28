@@ -1,14 +1,21 @@
 import React from 'react'
+import { useContext } from 'react'
+import {contexto} from './CustomProvider'
+
 
 const CartWidget = () => {
-  let products = 0
+  
+   const context = useContext(contexto)
+ 
+  
   return (
 
     <div className='notification'>
       <span className="material-symbols-outlined ">
       shopping_cart
       </span>
-      <p className='cartBubble'> {products}</p>
+      <p className='cartBubble'> {context.cart.reduce((acc, currentValue) => acc + currentValue.cant,
+   0)} </p>
     
     </div>
   )

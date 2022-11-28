@@ -1,16 +1,52 @@
-import React from 'react'
+import React from "react";
+import { useContext } from "react";
+import { useState } from "react";
+import { toast } from "react-toastify";
+ import { contexto } from "../CustomProvider";
+import ItemCount from "../itemCount/ItemCount";
+import "./itemDetail.scss";
 
-const ItemDetail = ({props}) => {
+const ItemDetail = ({ nombre, desc, precio, imagen, id }) => {
+
+  const context = useContext(contexto)
+  
+  const [cant, setCant] = useState(1);
+
+  const handleOnClick = (cantidad) => {
+    setCant(cantidad)   
     
-  return (
-    <article className=''>
-        <h2>     {props.nombre}  </h2>
-        <p> {props.desc} </p>
-        <p> ${props.precio} </p>
-        <img src={process.env.PUBLIC_URL + "/img_products/" + props.imagen }  alt="" className='card__image itemDetail__img' />
-       
-        </article>
-  )
-}
+  };
 
-export default ItemDetail
+  const handleComprar = (e) => {    
+    context.addToCart({id, nombre,cant, precio, imagen, desc});
+    toast.success("Producto agregado!", {
+      theme: "dark"
+    })
+    e.target.style.display = 'none';
+  };
+
+  return (
+    <article className="itemDetail__card">
+      <div className="itemDetail__card--container">
+        <img
+          src={"/img_products/" + imagen}
+          alt={nombre}
+          className="card__image itemDetail__img"
+        />
+        <div>
+          <h2> {nombre} </h2>
+          <p> {desc} </p>
+          
+          <p> ${precio} </p>
+
+          <button onClick={handleComprar}> Comprar </button>
+          <ItemCount handleOnClick={handleOnClick} />
+
+          
+        </div>
+      </div>
+    </article>
+  );
+};
+
+export default ItemDetail;

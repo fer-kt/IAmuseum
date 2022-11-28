@@ -1,0 +1,45 @@
+.cart__list {
+  display: flex;
+  flex-direction: row;
+  color: beige;
+  justify-content: center;
+  gap: 2rem;
+
+  img {
+    width: 3rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+
+form {
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    input {
+      width: 55%;
+      height: 1.5rem;
+      border-radius: 5px;
+      border: none;
+      font: inherit;
+      
+    }
+    label{
+        color: lightcyan;
+    }
+    
+  }
+  
+}
+
+button{
+    width: 55%;
+    margin: 1rem;
+    height: 1.5rem;
+      border-radius: 5px;
+      border: none;
+}

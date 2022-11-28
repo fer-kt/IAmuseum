@@ -101,7 +101,11 @@ main {
 }
 
 .active{
-  background-color:rgba(0, 0, 0, 0.1);
+  background-color:rgba(39, 41, 202, 0.356);
   
   border-radius: 10px;
+}
+
+.itemDetail__img{
+  max-width: 100%;
 }

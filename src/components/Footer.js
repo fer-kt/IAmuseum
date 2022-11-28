@@ -9,7 +9,7 @@ const Footer =()=>{
             &copy; 2022 Fernando Caté
             </p>
            
-           <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"> <BiMailSend  className="socialMedia__icons"/>  </a>
+           <a href="mailto:fernandoecate@gmail.com" target="_blank" rel="noopener noreferrer"> <BiMailSend  className="socialMedia__icons"/>  </a>
             <a href="https://www.instagram.com/fer_kt/" target="_blank" rel="noopener noreferrer"> <FaInstagram className="socialMedia__icons"/> </a>
             <a href="https://github.com/fer-kt/fer-kt" target="_blank" rel="noopener noreferrer"> <FaGithub className="socialMedia__icons"/> </a>
             
